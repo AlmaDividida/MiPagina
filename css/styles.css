@@ -97,7 +97,6 @@
     /* Parallax Effect*/
     
     .bg-parallax {
-        background-image: url(../img/fondo.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

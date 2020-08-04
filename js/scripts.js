@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $("#nav").hide();
     $("#toogle").click(function() {
         $("#nav").toggle("linear");
         $(this).toggleClass('rotate');
@@ -9,7 +10,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 
-    if ($('body').width() <= 980) {
+    if ($('header').width() <= 980) {
         $("#nav").hide();
     } else {
         $("#nav").show();
