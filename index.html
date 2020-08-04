@@ -4,42 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>Mi Sitio Web</title>
+    <!-- CSS DOCUMENTS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- FONTS AND TOOGLES -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06beed5da1.js" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT AND JQUERY DOCUMENTS -->
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
+    <!-- SITE HEADER -->
     <header class="site-header">
         <div class="navbar container">
             <a class="logo" href="index.html">
-                <h1 class=" text-center no-margin">David Moreno Gutierrez</h1>
+                <h1 class=" text-center no-margin">David Moreno Gutiérrez</h1>
             </a>
-            <nav class="nav">
+            <div class="drop-menu">
+                <button onclick="actionToogle()" class="down-toogle">
+                    <i class="fas fa-angle-down" id="toogle"></i>
+                </button >
+            </div>
+
+            <nav id="nav">
                 <a href="#">Mis Cursos</a>
                 <a href="#">Mis Proyectos</a>
                 <a href="#">Contactame</a>
             </nav>
+            
         </div>
+        <!--End of nav-container -->
     </header>
-    <div class="phrase bg-parallax">
-        <div class="container">
-            <h4 class="fw-300">"A veces, la persona a la que nadie imagina capaz de nada es la que hace cosas que nadie imagina."<br> - Alan Turing</h4>
+
+    <!-- PARALLAX BACKGROUND 1 -->
+    <div class="phrase bg-parallax bg-2">
+        <div class="container mw-600">
+            <h4 class="fw-300">"A veces, la persona a la que nadie imagina capaz de nada es la que hace cosas que nadie imagina.</h4>
+            <h4 class="author"> - Alan Turing</h4>
         </div>
     </div>
-    <seccion class="profile container section">
+
+    <!-- SECTION MY INFO -->
+    <main class="profile container section">
         <div class="profile-info"><img src="img/perfil.jpg" class="profile-image" alt="Imagen de perfil">
             <h2 class="text-center tx-under">¿QUIÉN SOY?</h2>
 
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum augue nec leo scelerisque mollis. Nulla iaculis et dui eu placerat. Integer et gravida dui. Duis interdum purus ac porttitor finibus. In congue eget metus at rutrum.
                 Duis venenatis facilisis viverra. Maecenas imperdiet blandit rutrum. Phasellus venenatis ex in nunc dictum, consectetur laoreet urna eleifend. Curabitur sodales metus vitae venenatis volutpat.</p>
-
         </div>
+        <!--End of prfile-info -->
         <aside class="profile-aside">
             <h2>Mis Cursos</h2>
-            <ul class="curses">
+            <ul class="curses-list">
                 <li>
                     <h3>Desarrollo Web</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias est sint quos nisi corrupti blanditiis, sed fuga in exercitationem et atque iusto dolor natus quia numquam, ullam odio aliquid facilis.</p>
@@ -56,9 +77,12 @@
                     <a href="btn btn-secundary">Ir al Curso</a>
                 </li>
             </ul>
+            <!--End of "curses list" -->
         </aside>
-    </seccion>
-    <div class="bg-parallax section">
+    </main>
+
+    <!-- PARALLAX BACKGROUND 2 -->
+    <div class="bg-parallax section bg-1">
         <div class="main-content container ">
             <h2 class="no-margin fw-aquire ">Bienvenido a mi sitio Web</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et esse illum ipsum, ut molestias dolorum aliquid dignissimos consectetur, voluptatibus animi beatae numquam minus ratione! Saepe ducimus veniam ratione quidem unde.</p>
@@ -66,6 +90,8 @@
             <a href="# " class="btn btn-primary ">Ver más</a>
         </div>
     </div>
+
+    <!-- SECTION CURRICULUM -->
     <section class="curriculum container section">
         <h2 class="text-center">Curriculum</h2>
         <ul class="curriculum-list">
@@ -86,6 +112,8 @@
                     <li>Curso Hacking Etico - Red Team</li>
                 </ul>
             </li>
+            <!--End of "Mi Formación" list -->
+
             <aside class="curriculum-aside ">
                 <li>
                     <h3>Lenguajes Programación</h3>
@@ -106,12 +134,21 @@
                         <li>Redes y Telecomunicaciones</li>
                     </ul>
                 </li>
-            </aside class="curriculum-aside ">
+            </aside>
+            <!--End of curriculum aside -->
+
         </ul>
+        <!--End of "Curriculum" list -->
+
     </section>
+    <!--End of "Curriculum" -->
+
     <footer class="site-footer section">
-        <p>Todos los Derechos reservados &copy;2020</p>
+        <div class="container">
+            <p>Todos los Derechos reservados &copy;2020</p>
+        </div>
     </footer>
+    <!--End of site-footer -->
 </body>
 
 </html>
