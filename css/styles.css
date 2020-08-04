@@ -144,15 +144,37 @@
         background: #202020;
         position: fixed;
         top: 0;
-        height: 14.7rem;
+        height: 14.5rem;
         width: 100%;
     }
     
     .logo {
-        text-align: center;
         color: #fff;
         cursor: pointer;
         line-height: 1.5;
+    }
+    
+    .logo-text {
+        max-width: 28rem;
+        margin: auto;
+    }
+    
+    @media (min-width: 768px) {
+        .site-header {
+            height: 9.2rem;
+        }
+        .logo h1 {
+            max-width: none;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .site-header {
+            height: 7.2rem;
+        }
+        .logo {
+            line-height: 2;
+        }
     }
     
     .drop-menu {
@@ -160,28 +182,17 @@
         justify-content: center;
     }
     
-    .down-toogle {
+    .menu-toogle {
         width: 100%;
-        background-color: #e4e4e4;
+        background-color: #333333;
         border: none;
         border-radius: 0.5rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
+        line-height: 1;
         padding: 0;
         outline: none;
-        color: #2b2b2b;
+        color: #e4e4e4;
         cursor: pointer;
-    }
-    
-    @media (min-width: 980px) {
-        .navbar {
-            height: 7.2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .down-toogle {
-            display: none;
-        }
     }
     
     #nav {
@@ -205,7 +216,15 @@
         transition: .5s;
     }
     
-    @media (min-width: 980px) {
+    @media (min-width: 1200px) {
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .drop-menu {
+            display: none;
+        }
         #nav {
             background-color: #222222;
             flex-direction: row;
@@ -227,22 +246,16 @@
     }
     
     .phrase {
-        margin-top: 14.7rem;
+        margin-top: 14.5rem;
     }
     
-    @media (min-width: 483px) {
-        .site-header {
-            height: 9.5rem;
-        }
+    @media (min-width: 768px) {
         .phrase {
-            margin-top: 9.5rem;
+            margin-top: 9.2rem;
         }
     }
     
-    @media (min-width: 863px) {
-        .site-header {
-            height: 7.2rem;
-        }
+    @media (min-width: 1200px) {
         .phrase {
             margin-top: 7.2rem;
         }
@@ -267,7 +280,7 @@
         border-bottom-left-radius: 0;
     }
     
-    @media (min-width: 980px) {
+    @media (min-width: 768px) {
         .profile {
             justify-content: space-between;
         }
@@ -281,9 +294,14 @@
             justify-content: flex-end;
         }
     }
+    /* PARALLAX BACKGROUND 2 */
+    
+    .bg2-content p {
+        max-width: 80rem;
+    }
     /* CURRICULUM */
     
-    @media (min-width: 980px) {
+    @media (min-width: 768px) {
         .curriculum-list {
             display: flex;
             justify-content: space-between;
