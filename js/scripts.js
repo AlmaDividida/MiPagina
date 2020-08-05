@@ -18,3 +18,11 @@ $(window).resize(function() {
         $("#nav").show();
     }
 });
+
+$(window).scroll(function() {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        $(".site-header").css("background", "#222222");
+    } else {
+        $(".site-header").css("background", "none");
+    }
+});
