@@ -4,9 +4,9 @@ $(document).ready(function() {
     } else {
         $("#nav").show();
     }
-    $("#toogle").click(function() {
+    $("#menu-toogle").click(function() {
         $("#nav").toggle("linear");
-        $(this).toggleClass('rotate');
+        $("#toogle").toggleClass('rotate');
 
     });
 });

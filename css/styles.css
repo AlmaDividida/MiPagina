@@ -297,6 +297,7 @@
     /* PARALLAX BACKGROUND 2 */
     
     .bg2-content p {
+        font-size: 2rem;
         max-width: 80rem;
     }
     /* CURRICULUM */
