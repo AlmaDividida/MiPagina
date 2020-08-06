@@ -78,7 +78,7 @@
     }
     
     .section {
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
     
     .tx-under {
@@ -284,9 +284,9 @@
     .profile-image {
         display: block;
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 20rem;
         border-radius: 50%;
-        border-bottom-left-radius: 0;
+        box-shadow: 5px 5px 10px #222222;
     }
     
     @media (min-width: 768px) {
@@ -303,10 +303,26 @@
             justify-content: flex-end;
         }
     }
+    
+    .social-icons {
+        max-width: 20rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .social-icons a {
+        color: #202020;
+        font-size: 3.5rem;
+    }
+    
+    .social-icons a:hover {
+        color: #f88f18;
+        transition: .5s;
+    }
     /* PARALLAX BACKGROUND 2 */
     
     .bg2-content p {
-        font-size: 2rem;
         max-width: 80rem;
     }
     /* CURRICULUM */

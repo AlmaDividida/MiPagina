@@ -20,6 +20,7 @@ $(window).resize(function() {
 });
 
 $(window).scroll(function() {
+    $(".site-header").css("transition", ".4s");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         $(".site-header").css("background", "#222222");
     } else {
