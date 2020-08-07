@@ -1,3 +1,4 @@
+/* TOOGLE ANIMATION ON CLICK */
 $(document).ready(function() {
     if ($('header').width() < 1200) {
         $("#nav").hide();
@@ -11,6 +12,7 @@ $(document).ready(function() {
     });
 });
 
+/* HIDE TOOGLE RESPONSIVE WEB DESIGN */
 $(window).resize(function() {
     if ($('header').width() < 1200) {
         $("#nav").hide();
@@ -19,11 +21,12 @@ $(window).resize(function() {
     }
 });
 
+/* BACKGROUNG HEADER TRANSPARENCY ON SCROLL */
 $(window).scroll(function() {
-    $(".site-header").css("transition", ".4s");
+    $(".home").css("transition", ".4s");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        $(".site-header").css("background", "#222222");
+        $(".home").css("background", "#111111");
     } else {
-        $(".site-header").css("background", "none");
+        $(".home").css("background", "none");
     }
 });
